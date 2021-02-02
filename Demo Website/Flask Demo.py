@@ -8,10 +8,11 @@ app = Flask(__name__, template_folder="Web_Templates")
 @app.route("/")
 
 def home():
-    return render_template("HTML.html")
-app.route("/about")
+    return render_template("MainPage.html")
+app.route("/aboutpage")
 def about():
-    return("welcome to the topdeck")
+    return render_template("AboutPage.html")
+
 
 
 
