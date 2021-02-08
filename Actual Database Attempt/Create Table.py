@@ -24,3 +24,5 @@ student_age INTEGER NOT NULL,
 tutor_id INTEGER NOT NULL,
 FOREIGN KEY(tutor_id) REFERENCES tutor(tutor_id) ON DELETE CASCADE
 )""")
+
+
