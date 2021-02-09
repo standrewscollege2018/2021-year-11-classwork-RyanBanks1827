@@ -8,8 +8,3 @@ DATABASE = 'Test database.db'
 connection=sqlite3.connect(DATABASE)
 
 
-# inserting records into the student table and tutor table.
-# cursor.execute("INSERT INTO tutor(tutor_code) VALUES('ABC'), ('xyz')")
-cursor.execute("INSERT INTO student(student_name, student_age, tutor_id) VALUES ('Toby', 16, 1), """)
-   #TBC
-               "
