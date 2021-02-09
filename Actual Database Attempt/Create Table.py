@@ -25,4 +25,18 @@ tutor_id INTEGER NOT NULL,
 FOREIGN KEY(tutor_id) REFERENCES tutor(tutor_id) ON DELETE CASCADE
 )""")
 
+# inserting records into the student table and tutor table.
+# cursor.execute("INSERT INTO tutor(tutor_code) VALUES('ABC'), ('xyz')")
+#cursor.execute("INSERT INTO student(student_name, student_age, tutor_id) VALUES ('Toby', 16, 2), ('Isaac', 15, 2), ('sam', 14, 2)")
+
+
+# selects all student names.
+# makes names type array
+connection.commit()
+names=cursor.execute("SELECT student_name, student_age FROM student")
+# loops through array, therefor printing all data
+for name in names:
+    print(name[0], name[1])
+
+
 
