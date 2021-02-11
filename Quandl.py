@@ -1,2 +1,8 @@
 import quandl
-mydata=quandl.get("RATEINF/INFLATION_NZL")
+import matplotlib.pyplot as plt
+import time
+while(True):
+    time.sleep(0.1)
+    mydata = quandl.get("RATEINF/INFLATION_NZL")
+
+
