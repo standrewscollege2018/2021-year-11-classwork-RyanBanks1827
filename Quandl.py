@@ -13,8 +13,9 @@ while (True):
     YearData = str(YearData)
     # YearData2=YearData.strip('Value')
     # NewYear=[int(i) for i in YearData.split() if i.isalpha()]
-    YearNew=slice(1, 5)
-    print(YearData[YearNew])
+    # YearNew=slice(1, 5)
+    YearNew2=YearData[0:6]
+    print(YearNew2)
 
 
     # print(YearData2.split(','))
