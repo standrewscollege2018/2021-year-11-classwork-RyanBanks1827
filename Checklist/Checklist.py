@@ -24,4 +24,7 @@ while(True):
 
     if(COMMAND=="CREATE"):
         WhatToCreate=input("What do you wish to add to the list?")
-        # cursor.execute
+        time.sleep(DELAY)
+        cursor.execute("INSERT INTO List(Showing_value, Complete VALUES"(WhatToCreate, False))
+        print("Command Complete")
+    time.sleep(DELAY)
