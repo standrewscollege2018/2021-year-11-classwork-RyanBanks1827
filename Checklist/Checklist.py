@@ -12,7 +12,7 @@ cursor = connection.cursor()
 # Unlocking full capability of sqlite, so we can use NOT NULL values.
 connection.execute("PRAGMA foreign_keys = ON")
 time.sleep(DELAY)
-cursor.execute("""CREATE TABLE IF NOT EXISTS List(Showing_value INTEGER PRIMARY KEY,Complete BOOLEAN UNIQUE NOT NULL)""")
+cursor.execute("""CREATE TABLE IF NOT EXISTS List(Showing_value STRING PRIMARY KEY,Complete BOOLEAN UNIQUE NOT NULL)""")
 
 time.sleep(DELAY)
 connection.commit()
@@ -25,6 +25,6 @@ while(True):
     if(COMMAND=="CREATE"):
         WhatToCreate=input("What do you wish to add to the list?")
         time.sleep(DELAY)
-        cursor.execute("INSERT INTO List(Showing_value, Complete VALUES"(WhatToCreate, False))
+        cursor.execute("INSERT INTO List(Showing_value, Complete VALUES"(WhatToCreate, bool(False)))
         print("Command Complete")
     time.sleep(DELAY)
