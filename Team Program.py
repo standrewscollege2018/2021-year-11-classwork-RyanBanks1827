@@ -9,7 +9,7 @@ teammembers=[]
 def command_add(teamtoregister):
     print("Registered the team :" + str(teamtoregister))
     registerteam = str(teamtoregister)
-    list.append(Teamnames, registerteam)
+    list.append(Teamnames, [])
 
 
 def command_remove(teamtoremove):
@@ -26,8 +26,10 @@ def command_register(person):
 
         print("Assigned person to the team: " + AddID)
         time.sleep(BTD)
+        # declaring the list that contains both the team ID and the person to add.
         teampeople = [person, AddID]
-        teammembers = [[Teamnames], [teampeople]]
+        list.append(Teamnames[teampeople])
+        print(Teamnames)
 
 
     else:
