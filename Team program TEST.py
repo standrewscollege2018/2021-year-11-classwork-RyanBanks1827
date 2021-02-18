@@ -1,6 +1,8 @@
 Teams = []
 Teamnames = []
-Exit=False
+Exit = False
+currentpersontoadd="null"
+
 while True:
     # command selection from user
     print("Welcome to the Team management program. Please enter a command")
@@ -9,17 +11,28 @@ while True:
     if currentcommand == "Setup":
         print("What do you wish the team to be called?")
         currentsetupteam = (input("-->"))
-# This section is the list filling functions which appends certain items to a list.
-        while not Exit:
+        # This section is the list filling functions which appends certain items to a list.
+
+        while currentpersontoadd != "exit":
             print("Who do you you wish to add to the team? Type exit when you're done")
-            currentpersontoadd = (input("-->"))
-            list.append(Teams, [currentpersontoadd])
-            list.append(Teamnames, [currentsetupteam])
+            currentpersontoadd = input("-->")
+
+            if currentpersontoadd !="exit":
+                list.append(Teams, [currentpersontoadd])
+                list.append(Teamnames, [currentsetupteam])
+
             print(Teamnames)
             print(Teams)
-            if currentpersontoadd=="exit":
-                Exit=True
+
+
+
+
+
+
+
+
+
 
         print(Teamnames)
         print(Teams)
-        print("NiceS")
+
