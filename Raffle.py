@@ -20,8 +20,9 @@ def test(obj):
         return False
 
 
+# Main loop for command setting.
 while True:
-    raffleinput = input("enter your name to be in to win!")
+    raffleinput = input("enter your name to be in to win: " + winningthing + " ")
     # Determining the raffle length so the name can be drawn
     if raffleinput == "devrun":
         rafflelength = len(raffle)
@@ -35,7 +36,7 @@ while True:
             timer = timer - 0.1
             time.sleep(0.1)
         print(winner)
-        print("Has won a" + winningthing)
+        print("Has won: " + winningthing)
     # Allows devs to change the prize.
     if raffleinput == "changeprize":
         winningthing = input("New prize?--> ")
@@ -43,8 +44,8 @@ while True:
     # Triggers if the raffleinput test fails -ln 12 for reference.
     if test(raffleinput):
         print("That's not a name! You slimy sea slug!")
-    if raffleinput=="listclear":
-        raffle=[]
+    if raffleinput == "listclear":
+        raffle = []
     # Appending to the list the proper value while letting the user know what they entered.
     elif raffleinput != "changeprize" or raffleinput != "devrun" or raffleinput != "listclear":
         list.append(raffle, raffleinput)
