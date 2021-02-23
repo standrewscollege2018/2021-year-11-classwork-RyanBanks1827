@@ -5,7 +5,7 @@ for i in range(0, 3):
     list.append(names, name)
 
 
-print(names[])
+print(names[3])
 
 
 
