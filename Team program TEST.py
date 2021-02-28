@@ -1,5 +1,5 @@
-Teams = []
-Teamnames = []
+teams = []
+teamnames = []
 Exit = False
 currentpersontoadd="null"
 
@@ -18,11 +18,11 @@ while True:
             currentpersontoadd = input("-->")
 
             if currentpersontoadd !="exit":
-                list.append(Teams, [currentpersontoadd])
-                list.append(Teamnames, [currentsetupteam])
+                list.append(teams, [currentpersontoadd])
+                list.append(teamnames, [currentsetupteam])
 
-            print(Teamnames)
-            print(Teams)
+            print(teamnames)
+            print(teams)
 
 
 
