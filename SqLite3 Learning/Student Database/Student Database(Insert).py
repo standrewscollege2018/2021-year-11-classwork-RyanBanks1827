@@ -15,7 +15,7 @@ if genderselect=="male":
 elif genderselect=="female":
     gendertoadd="F"
 students= cursor.execute("SELECT STUDENT")
-
+cursor.execute("INSERT INTO STUDENT VALUES ")
 cursor.execute("INSERT INTO STUDENT VALUES('Max', 'M')")
 connection.commit()
 connection.close()
